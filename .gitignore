@@ -1,17 +1,66 @@
-# 忽略Python的编译缓存和虚拟环境
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.py,cover
+.Python
 venv/
 .venv/
+env/
+ENV/
+site/
 
-# 忽略IDE配置文件
+# 包管理
+pip-delete-this-directory.txt
+pip-log.txt
+
+# 单元测试和覆盖率
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.tox/
+.nox/
+
+# 分发和包构建
+dist/
+build/
+*.egg-info/
+*.egg
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# 忽略系统文件
+# 操作系统
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# 忽略备份文件
+# 备份文件
 *.backup
 *.bak
+*.tmp
+
+# 日志
+*.log
+logs/
+
+# 环境变量和配置
+.env
+.env.local
+.env.production
+config.ini
+secrets.py
+
+# 数据库
+*.db
+*.sqlite3
